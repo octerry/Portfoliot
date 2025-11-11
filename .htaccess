@@ -1,2 +1,10 @@
 ErrorDocument 404 /404.html
-ErrorDocument 302 /InConstruction/InConstruction.html
+
+RewriteEngine On
+
+# Ne pas reboucler si on est déjà dans /InConstruction/
+RewriteCond %{REQUEST_URI} !^/InConstruction/ [NC]
+# Autoriser les fichiers statiques (styles, scripts, images)
+RewriteCond %{REQUEST_URI} !\.(css|js|png|jpg|jpeg|gif|svg|ico)$ [NC]
+# Redirection temporaire (302) vers la page de maintenance
+RewriteRule ^.*$ /InConstruction/InConstruction.html [R=302,L]
