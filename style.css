@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+/* PAGE ERREUR 404 */
+.errorBody {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 /* PAGE "SITE EN CONSTRUCTION" INCONSTRUCTION.HTML */
 /* Base : https://www.sliderrevolution.com/resources/css-animated-background/ */
 .inConstructionBody {
