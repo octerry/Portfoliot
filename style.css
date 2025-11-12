@@ -255,10 +255,10 @@ body{
   width: 6vh;
   border-radius: 2vh;
   overflow: hidden;
-  box-shadow: -.5vh -.5vh 1vh 0 #ffffff,
-    .5vh .5vh 1vh 0 #d1d9e6,
-    .5vh .5vh .5vh 0 #d1d9e6 inset,
-    -.5vh -.5vh .5vh 0 #ffffff inset;
+  box-shadow: -.5vh -.5vh 1vh 0 #0000002c,
+    .5vh .5vh 1vh 0 #0000002c,
+    .5vh .5vh .5vh 0 #0000002c inset,
+    -.5vh -.5vh .5vh 0 #0000002c inset;
 }
 
 .darkModeToggle-state {
@@ -268,16 +268,21 @@ body{
 .darkModeToggleIndicator {
   height: 100%;
   width: 200%;
-  background: #ecf0f3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5vh;
+  background-color: #FFF4CEFF;
   border-radius: 2vh;
   transform: translate3d(-75%, 0, 0);
   transition: transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
-  box-shadow: -1vh -.5vh .5vh 0 #ffffff,
-    .5vh .5vh 1vh 0 #d1d9e6;
+  box-shadow: -1vh -.5vh .5vh 0 #0000003c,
+    .5vh .5vh 1vh 0 #0000003c;
 }
 
 .darkModeToggle-state:checked ~ .darkModeToggleIndicator {
   transform: translate3d(25%, 0, 0);
+  background-color: #0a101da0;
 }
 
 .presentationContent{
