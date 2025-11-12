@@ -18,7 +18,7 @@
 .inConstructionBody {
     font-family: 'Inter', 'Helvetica Neue', sans-serif;
     overflow: hidden;
-    background-color: #050505;
+    background-color: #000000;
     color: white;
     height: 100vh;
     display: flex;
@@ -40,7 +40,7 @@
     font-weight: 800;
     margin-bottom: 5vh;
     text-shadow: 0 0 20px #d3d3d31a;
-    line-height: 4vh;
+    line-height: 9vw;
 }
 
 .content-container p {
@@ -58,10 +58,18 @@
     user-select: all;
 }
 
+.logoInConstruction #logoGithub,#logoEmail{
+    transition-duration: 100ms;
+}
+
 .logoInConstruction #logoGithub:hover,#logoEmail:hover{
     transition: ease;
     fill: #ffffffC0;
+    filter: drop-shadow(0 0 3px #FFFFFFFF);
     cursor: pointer;
+    transition: ease;
+    transition-duration: 100ms;
+    transform: scale(1.1) translateY(-5px);
 }
 
 .gradient-background {
@@ -77,7 +85,7 @@
 .gradient-sphere {
     position: absolute;
     border-radius: 50%;
-    filter: blur(60px);
+    filter: blur(15vw);
 }
 
 .sphere-1 {
@@ -142,10 +150,10 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-size: 40px 40px;
+    background-size: 2rem 2rem;
     background-image: 
-        linear-gradient(to right, #ffffff0A 1px, transparent 1px),
-        linear-gradient(to bottom, #ffffff0A 1px, transparent 1px);
+        linear-gradient(to right, #ffffff0A .1rem, transparent 1px),
+        linear-gradient(to bottom, #ffffff0A .1rem, transparent 1px);
     z-index: 2;
 }
 
