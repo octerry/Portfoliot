@@ -1,10 +1,18 @@
+/*POLICES D'ECRITURES*/
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Oswald:wght@200..700&family=PT+Sans+Narrow:wght@400;700&family=Timmana&display=swap');
+
+/*PAGES*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* PAGE ERREUR 404 */
+body{
+    background-color: black;
+}
+
+/*PAGE ERREUR 404*/
 .errorBody {
     display: flex;
     height: 100vh;
@@ -13,8 +21,8 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* PAGE "SITE EN CONSTRUCTION" INCONSTRUCTION.HTML */
-/* Base : https://www.sliderrevolution.com/resources/css-animated-background/ */
+/*🏗️ PAGE "SITE EN CONSTRUCTION" INCONSTRUCTION.HTML*/
+/*Base : https://www.sliderrevolution.com/resources/css-animated-background/*/
 .inConstructionBody {
     font-family: 'Inter', 'Helvetica Neue', sans-serif;
     overflow: hidden;
@@ -197,4 +205,129 @@
     border-radius: 50%;
     opacity: 0;
     pointer-events: none;
+}
+
+/*🏠 PAGE D'ACCEUIL*/
+.indexBody{
+    color: white;
+    background-color: #0F151F;
+}
+
+.indexHeader{
+    background: linear-gradient(#243B55, #141E30);
+}
+
+.indexHeaderBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2vh;
+    font-family: "Oswald";
+    padding: 2vh;
+}
+
+.indexHeader .indexHeaderLeftPart{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50vh;
+}
+
+.amburgerMenu{
+    width: 5vh;
+}
+
+.darkModeToggleLabel {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  color: #394a56;
+}
+
+.darkModeToggleLabel-text {
+  margin-left: 2vh;
+}
+
+.darkModeToggle {
+  isolation: isolate;
+  position: relative;
+  height: 3vh;
+  width: 6vh;
+  border-radius: 2vh;
+  overflow: hidden;
+  box-shadow: -.5vh -.5vh 1vh 0 #ffffff,
+    .5vh .5vh 1vh 0 #d1d9e6,
+    .5vh .5vh .5vh 0 #d1d9e6 inset,
+    -.5vh -.5vh .5vh 0 #ffffff inset;
+}
+
+.darkModeToggle-state {
+  display: none;
+}
+
+.darkModeToggleIndicator {
+  height: 100%;
+  width: 200%;
+  background: #ecf0f3;
+  border-radius: 2vh;
+  transform: translate3d(-75%, 0, 0);
+  transition: transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
+  box-shadow: -1vh -.5vh .5vh 0 #ffffff,
+    .5vh .5vh 1vh 0 #d1d9e6;
+}
+
+.darkModeToggle-state:checked ~ .darkModeToggleIndicator {
+  transform: translate3d(25%, 0, 0);
+}
+
+.presentationContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+}
+
+.presentationContentInner1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Timmana";
+    font-size: clamp(10px,4vh,7vw);
+}
+
+.presentationContentInner2{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: -3vh;
+}
+
+.presentationContentInner3{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    height: 8vh;
+    margin: 1vh;
+}
+
+.presentationContentInner3 h2{
+    font-family: "PT Sans Narrow";
+    font-weight: 500;
+    font-size: clamp(10px,4vh,7vw);
+}
+
+.presentationContentInner3 a{
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+}
+
+.presentationContentInner3 a:hover{
+    color: #f89959;
+}
+
+.presentationContentInner3 h3{
+    font-family: "Allerta Stencil";
+    font-size: clamp(10px,2.7vh,4.5vw);
 }
