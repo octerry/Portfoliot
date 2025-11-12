@@ -49,6 +49,19 @@
     margin-bottom: 2rem;
 }
 
+.logoInConstruction {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    user-select: all;
+}
+
+.logoInConstruction #logoGithub:hover,#logoEmail:hover{
+    transition: ease;
+    fill: #ffffffC0;
+    cursor: pointer;
+}
+
 .gradient-background {
     position: absolute;
     top: 0;
