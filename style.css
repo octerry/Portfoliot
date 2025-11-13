@@ -214,6 +214,19 @@ body{
     pointer-events: none;
 }
 
+.lienSite{
+    transition-duration: 100ms;
+    color: rgba(255, 255, 255, 0.205);
+    font-size: clamp(10px,2vh,.7vw);
+}
+
+.lienSite:hover{
+    transition: ease;
+    transition-duration: 100ms;
+    color: #5a63b3;
+    text-shadow: 0 0 15vh #5a63b3;
+}
+
 /*🏠 PAGE D'ACCEUIL*/
 .indexBody{
     color: white;
