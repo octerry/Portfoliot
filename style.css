@@ -321,7 +321,8 @@ body{
 .presentationContent img{
     align-self: center;
     filter: drop-shadow(1vh 2vh 3vh #00000030);
-    width: clamp(50px,55vh,90vw);
+    width: clamp(50px,65vh,110vw);
+    margin-left: -8vw;
 }
 
 .presentationContentInner1{
@@ -377,6 +378,7 @@ body{
 .indexMain{
     background-color: #0F151F;
     height: 100vh-;
+    z-index: 1000;
 }
 
 /*Quand le flex s'applique*/
