@@ -1,8 +1,2 @@
 #Rediriger vers 404.html si Erreur404
 ErrorDocument 404 /404.html 
-
-
-RewriteEngine On
-
-RewriteRule ^en-construction/?$ EnConstruction.html
-RewriteRule ^acceuil/?$ index2.html
