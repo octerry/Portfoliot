@@ -3,15 +3,15 @@ const express = require('express');
 
 const app = express();
 
-app.use('/', express.static(path.join(__dirname, 'side-quest/discord-login/public')));
+const root = path.join(__dirname, '..'); // discord-login
+app.use(express.static(root));
 
-app.get('/home', (request, response) => {
-    return response.sendFile('side-quest/discord-login/home.html', { root: '.'});
-});
+app.get('/', (req, res) => res.sendFile(path.join(root, 'index.html')));
+app.get('/home.html', (req, res) => res.sendFile(path.join(root, 'home.html')));
 
-app.get('/', (request, response) => {
-    return response.sendFile('side-quest/discord-login/index.html', { root: '.'});
-});
+// logs d'erreur simples
+process.on('uncaughtException', (err) => console.error('uncaughtException', err));
+process.on('unhandledRejection', (err) => console.error('unhandledRejection', err));
 
-const port = '3000'
-app.listen(port, () => console.log(`App listeniong at localhost:${port}`));
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log(`App listening at http://localhost:${port}`));
