@@ -1,6 +1,7 @@
 /*POLICES D'ECRITURES*/
 @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Oswald:wght@200..700&family=PT+Sans+Narrow:wght@400;700&family=Timmana&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&family=Jersey+10&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*PAGES*/
 * {
@@ -414,6 +415,11 @@ body{
     background-color: #0F151F;
     height: 100vh-;
     z-index: 1000;
+}
+
+.indexMainIntroduction{
+    font-family: "Roboto";
+    font-weight: 100;
 }
 
 /*Quand le flex s'applique*/
