@@ -1,0 +1,43 @@
+/*PAGES*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #222331;
+}
+
+/*LOGIN*/
+.loginBody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.loginBody button{
+    background-color: #FFFFFF;
+    font-size: 3vh;
+    border-radius: 2vh;
+    border-width: .5vh;
+    padding: 1vh;
+    border: none;
+}
+
+.loginBody button:hover{
+    background-color: #2628c9;
+    color: #FFFFFF;
+    filter: drop-shadow(0 0 10vh #000000);
+}
+
+.loginBody p{
+    font-size: 2.7vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 80vw;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 2vh;
+}
