@@ -1,5 +1,6 @@
 /*POLICES D'ECRITURES*/
 @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Oswald:wght@200..700&family=PT+Sans+Narrow:wght@400;700&family=Timmana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&family=Jersey+10&display=swap');
 
 /*PAGES*/
 * {
@@ -20,12 +21,46 @@ body{
     justify-content: center;
     flex-direction: column;
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: radial-gradient(
+        circle at 50%,
+        #2F154E,
+        #000000);
+    font-family: "Jersey 10";
+    font-weight:normal;
+    font-size: 2.5vh;
+    user-select: none;
 }
 
 .errorBody a{
-    color: #384969;
-    font-size: 2vh;
+    transition: ease;
+    transition-duration: 300ms;
+    color: #4D71A6;
+    font-family: "Jaldi";
+    font-size: 3vh;
+    text-decoration: none;
+    margin-bottom: -2vh;
+    filter: drop-shadow(0 0 1vh);
+}
+
+.errorBody a:hover{
+    transition: ease;
+    transition-duration: 100ms;
+    filter: drop-shadow(0 0 2vh);
+    color: #92afdb;
+}
+
+.errorIMG{
+    width: 30vh;
+}
+
+.errorTiles{
+    position: fixed;
+    z-index: -1000;
+    background-image: url(source/tile.png);
+    background-size: 25vh;
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat;
 }
 
 /*🏗️ PAGE "SITE EN CONSTRUCTION" INCONSTRUCTION.HTML*/
