@@ -18,7 +18,7 @@ fetch('https://discord.com/api/users/@me', {
     const { username, discriminator, avatar, id} = response;
 
     //ICI ON PEUT INJECTER DES TRUCS DANS LE HTML EN MODE "getElementById"
-
+    console.log(`bien connecté en temps que ${username}`)
 
 })
 
