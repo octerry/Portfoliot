@@ -41,3 +41,49 @@ body{
     color: #FFFFFF;
     margin-top: 2vh;
 }
+
+#acceptedHomeBody{
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    padding: 2vh;
+    color: #FFFFFF;
+    background-color: #403e52;
+    font-family: 'Segoe UI';
+    min-height: 100vh;
+}
+
+#acceptedHomeBody h1{
+    font-size: 5vh;
+}
+
+#acceptedHomeBody .galerie{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3vh;
+}
+
+#acceptedHomeBody .galerie img{
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+}
+
+#acceptedHomebody .galerie img:hover{
+    transform: scale(1.5);
+    filter: drop-shadow(10vh 10vh 10vh white);
+}
+
+#deniedHomeBody{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    color: #FFFFFF;
+    font-family: 'Lucida Sans';
+    font-size: 3vw;
+}
