@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Oswald:wght@200..700&family=PT+Sans+Narrow:wght@400;700&family=Timmana&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&family=Jersey+10&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*PAGES*/
 * {
@@ -275,7 +276,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     background: linear-gradient(#243B55, #141E30);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .indexHeaderBar{
@@ -351,14 +352,16 @@ body{
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-top: 5vh;
 }
 
 .presentationContent img{
     align-self: center;
+    z-index: 0;
     filter: drop-shadow(1vh 2vh 3vh #00000030);
-    width: clamp(50px,65vh,110vw);
-    margin-left: -8vw;
+    width: clamp(50px,65vh,100%);
+    height: 90vh;
+    object-fit: cover;
+    filter: drop-shadow(3vh 3vh 1vh #00000050);
 }
 
 .presentationContentInner1{
@@ -367,7 +370,7 @@ body{
     flex-direction: column;
     font-family: "Timmana";
     font-size: clamp(10px,6vh,7vw);
-    margin-bottom: clamp(10px,15vw,30vh);
+    margin-bottom: clamp(1px,20vw,40vh);
 }
 
 .presentationContentInner2{
@@ -412,14 +415,179 @@ body{
 }
 
 .indexMain{
+    padding: 5vw;
     background-color: #0F151F;
-    height: 100vh-;
     z-index: 1000;
-}
-
-.indexMainIntroduction{
     font-family: "Roboto";
     font-weight: 100;
+    font-size: 3vh;
+}
+
+.indexMain h1{
+    margin-top: 6vh;
+    font-weight: 200;
+    font-size: 6vh;
+    text-align: center;
+}
+
+.indexMain a{
+    transition: ease 100ms;
+    color: rgb(97, 142, 194);
+    text-decoration: none;
+    font-weight: 200;
+}
+
+.indexMain a:hover{
+    transition: ease 200ms;
+    font-weight: 300;
+}
+
+.indexMainIntroduction h2{
+    font-family: "Roboto";
+    font-weight: 100;
+    font-size: 4vh;
+}
+
+.indexMainIntroduction p{
+    margin-top: 1.5vh;
+    text-indent: 2vh;
+}
+
+.indexMainExperience{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.indexMainExperience p{
+    margin-top: 1vh;
+}
+
+.indexMainExperience h2{
+    margin-top: 2vh;
+    font-weight: 100;
+    font-size: 3vh;
+}
+
+.indexMainLogicielInner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.indexMainLogicielInner div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5vh;
+}
+
+.indexMainLogicielInner img{
+    width: 20vh;
+    height: 20vh;
+}
+
+.indexMainLogicielInner h2{
+    font-weight: 100;
+}
+
+.indexFooter{
+    background-color: #080D15;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-family: "Raleway";
+    font-weight: 100;
+    color: #576C89;
+    padding: 5vh;
+    text-align: center;
+}
+
+.indexFooter h1{
+    font-size: 4vh;
+    font-weight: bold;
+}
+
+.indexFooterInner1, .indexFooterInner2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.indexFooterInner1 a{
+    text-decoration: none;
+}
+
+.indexFooterInner1 .indexEmailButton{
+    transition: ease 50ms;
+    background-color: #D7E8FF10;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 2vh;
+    color: #D7E8FF;
+    padding: 1vh;
+    margin-top: 2vh;
+    border-radius: 1.5vh;
+}
+
+.indexFooterInner1 .indexEmailButton:hover{
+    transition: ease 100ms;
+    background-color: #D7E8FF40;
+}
+
+.indexFooterInner1 .indexEmailButton img{
+    margin-right: 1vh;
+    width: 3vh;
+}
+
+.indexFooterInner1 .indexNetwork{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+.indexFooterInner1 .indexNetwork img{
+    width: 7vh;
+    margin: 1vh;
+}
+
+.indexFooterInner1 .indexNetwork img:hover{
+    filter: brightness(1.75) grayscale(50%);
+}
+
+.indexFooter hr{
+    border: outset 2px #576C89;
+}
+
+.indexFooterInner2 button{
+    transition: ease 50ms;
+    margin-top: 2vh;
+    background-color: #4D607B20;
+    font-family: "Raleway";
+    font-size: 3vh;
+    color: #576C89;
+    border-width: 0;
+    border-radius: 3vh;
+    padding-right: 1vh;
+    padding-left: 1vh;
+}
+
+.indexFooterInner2 button:hover{
+    transition: ease 100ms;
+    background-color: #4D607B70;
+}
+
+.indexFooterInner2 h2{
+    margin-top: 2vh;
+    font-weight: 400;
+}
+
+.indexFooterInner2 p{
+    font-weight: 200;
+    font-size: 2vh;
 }
 
 /*Quand le flex s'applique*/
@@ -427,6 +595,13 @@ body{
     .presentationContentInner1{
         display: flex;
         position: sticky;
-        top: 20vh;
+        top: 15vh;
+        margin-bottom: 0;
+    }
+
+    .indexFooter hr{
+        margin-top: 4vh;
+        margin-bottom: 4vh;
+        width: 80vw;
     }
 }
