@@ -288,15 +288,28 @@ body{
     padding: 2vh;
 }
 
-.indexHeader .indexHeaderLeftPart{
+.indexHeaderLeftPart{
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
-    width: 50vh;
+}
+
+.indexHeaderLeftPart a{
+    transition: ease 100ms;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 2vh;
+}
+
+.indexHeaderLeftPart a:hover{
+    transition: ease 150ms;
+    text-shadow: 0 0 2vh #94a0e4;
+    transform: scale(1.1);
 }
 
 .amburgerMenu{
     width: 5vh;
+    margin-right: 2vh;
 }
 
 .darkModeToggleLabel {
@@ -603,5 +616,9 @@ body{
         margin-top: 4vh;
         margin-bottom: 4vh;
         width: 80vw;
+    }
+    
+    .indexHeaderLeftPart a{
+        display: none;
     }
 }
