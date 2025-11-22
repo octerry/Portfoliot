@@ -279,6 +279,31 @@ body{
     min-height: 100vh;
 }
 
+#indexMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    position: fixed;
+    background-color: #00000070;
+    margin-top: -100vh;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(1vh);
+    transition: ease 300ms;
+}
+
+.indexMenuSelection{
+    width: 90vw;
+    height: 100vh;
+}
+
+.indexMenuCross{
+    margin: 1vh;
+    width: 7vh;
+    cursor: pointer;
+}
+
 .indexHeaderBar{
     display: flex;
     justify-content: space-between;
@@ -296,6 +321,7 @@ body{
 
 .indexHeaderLeftPart a{
     transition: ease 100ms;
+    font-size: 3vh;
     color: #FFFFFF;
     text-decoration: none;
     margin-right: 2vh;
@@ -310,6 +336,7 @@ body{
 .amburgerMenu{
     width: 5vh;
     margin-right: 2vh;
+    cursor: pointer;
 }
 
 .darkModeToggleLabel {
@@ -388,14 +415,16 @@ body{
 
 .presentationContentInner2{
     display: flex;
-    align-items: center;
+    justify-content: center;
+    align-items: start;
     flex-direction: row;
     margin-top: -3vh;
 }
 
 .presentationContentInner2 svg{
-    width: clamp(10px,10vh,15vw);
-    height: clamp(10px,10vh,15vw);
+    margin-top: 1.5vh;
+    width: clamp(10px,11vh,13vw);
+    height: clamp(10px,11vh,13vw);
 }
 
 .presentationContentInner3{
@@ -619,6 +648,10 @@ body{
     }
     
     .indexHeaderLeftPart a{
+        display: none;
+    }
+
+    #indexMenu hr{
         display: none;
     }
 }
