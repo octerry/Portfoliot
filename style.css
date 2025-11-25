@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&family=Jersey+10&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Lekton:ital,wght@0,400;0,700;1,400&family=Lexend+Zetta:wght@100..900&display=swap');
 
 /*PAGES*/
 * {
@@ -284,8 +285,11 @@ body{
     flex-direction: row;
     justify-content: start;
     position: fixed;
-    background-color: #00000070;
-    margin-top: -100vh;
+    background: linear-gradient(.25turn, #000000B0, #00000000);
+    background-image: none;
+    background-size: cover;
+    transition: background-image 2s;
+    /*margin-top: -100vh;*/
     z-index: 1000;
     width: 100vw;
     height: 100vh;
@@ -294,8 +298,49 @@ body{
 }
 
 .indexMenuSelection{
-    width: 90vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: calc(100vw - 7vh);
     height: 100vh;
+}
+
+.indexMenuSelection h1{
+    font-family: "League Gothic";
+    font-weight: 100;
+    font-size: 10vh;
+    margin-left: -8vh;
+}
+
+.indexMenuSelection h3{
+    font-family: "Lekton";
+    font-weight: 100;
+    font-size: 2.7vh;
+    margin-top: -2.5vh;
+    margin-left: -8vh;
+}
+
+.indexMenuSelection div{
+    align-self: flex-start;
+    margin-top: calc(20vh - 3vw);
+}
+
+.indexMenuSelection a{
+    text-decoration: none;
+}
+
+.indexMenuSelection h2{
+    transition: ease 400ms;
+    font-family: "Lexend Zetta";
+    font-weight: 100;
+    color: #fff;
+    font-size: calc(1vh + 3vw);
+    margin-top: calc(8vh - 3vw);
+    margin-left: 1.5vw;
+}
+
+.indexMenuSelection h2:hover{
+    font-weight: 200;
 }
 
 .indexMenuCross{
