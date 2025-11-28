@@ -294,6 +294,13 @@ body{
     width: 100vw;
     height: 100vh;
     backdrop-filter: blur(1vh);
+    mask: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, .75) 7vw,
+        rgba(0, 0, 0, 1) 14vw,
+        rgba(0, 0, 0, 1) 100%
+    );
     transition: ease 300ms;
 }
 
@@ -675,6 +682,56 @@ body{
 .indexFooterInner2 p{
     font-weight: 200;
     font-size: 2vh;
+}
+
+/*PAGE CODE*/
+.codeBody{
+    color: #fff;
+}
+
+/*PAGE ROBOTIQUE*/
+.robotBody{
+    color: #fff;
+    width: 100vw;
+    background: radial-gradient(
+        #696973 0%,
+        #2E2E32 72%,
+        #1E1F22 100%
+    );
+}
+
+.robotBg{
+    height: 130vw;
+    width: 100vw;
+}
+
+#robotBgInner1,
+#robotBgInner2{
+    position: absolute;
+    width: 100vw;
+}
+
+#robotBgInner3,
+#robotBgInner4{
+    position: absolute;
+    width: 100vw;
+    top: 70vw;
+}
+
+#robotBgInner5{
+    position: absolute;
+    width: 100vw;
+    top: 200vw
+}
+
+/*PAGE ART*/
+.artBody{
+    color: #fff;
+}
+
+/*PAGE PROFESSIONELLE*/
+.proBody{
+    color: #fff;
 }
 
 /*Quand le flex s'applique*/
