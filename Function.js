@@ -1,3 +1,25 @@
+// Coucou toi qui regarde dans le code
+
+
+// /‾‾‾‾‾\ /‾‾‾‾‾] [‾‾‾‾‾‾‾‾] |‾‾‾‾‾] |‾‾‾‾‾\ |‾‾‾‾‾\ |‾| /‾/
+// | |‾| | | |‾‾‾   ‾‾|  |‾‾  | |‾‾‾  |     | |     | | |/ /
+// | | | | | |        |  |    |  ___] |     / |     / |  _/
+// | |_| | | |___     |  |    | |___  | |\ \  | |\ \  | |
+// \_____/ \_____]    |__|    |_____] |_| \_\ |_| \_\ |_|
+// MADE ON EARTH BY HUMANS
+
+//DEFINITION DES FONCTIONS
+let all = document.querySelectorAll('*')
+
+const indexMenu = document.getElementById("indexMenu")
+let indexCode = document.getElementById("indexMenuCode")
+let indexArt = document.getElementById("indexMenuArt")
+let indexRobot = document.getElementById("indexMenuRobot")
+let indexPro = document.getElementById("indexMenuPro")
+
+let nightModeCheck = document.getElementById("darkModeToggle-state")
+let changeThisLogo = document.getElementsByClassName('logoToChange')
+
 //MENU FLOTTANT
 //OUVERTURE DU MENU FLOTTANT
 function indexHideMenu () {
@@ -18,9 +40,6 @@ function indexHideMenu () {
 
 
 //ANIMATION DU FOND DU MENU FLOTTANT
-const indexMenu = document.getElementById("indexMenu")
-
-let indexCode = document.getElementById("indexMenuCode")
 indexCode.addEventListener("mouseenter", () => {
     indexMenu.style.backgroundImage = 'linear-gradient(0.25turn, #00000080, #00000000), url("source/optimizedIllustrationCode.png")';
     indexMenu.style.backgroundPosition = "right 30% top";
@@ -38,7 +57,6 @@ indexCode.addEventListener("mouseleave", () => {
         indexMenu.style.transition = 'ease 300ms';
 })
 
-let indexRobot = document.getElementById("indexMenuRobot")
 indexRobot.addEventListener("mouseenter", () => {
     indexMenu.style.backgroundImage = 'linear-gradient(0.25turn, #000000B0, #00000000), url("source/optimizedIllustrationRobot.png")'
     indexMenu.style.backgroundPosition = "right 30% bottom"
@@ -56,7 +74,6 @@ indexRobot.addEventListener("mouseleave", () => {
         indexMenu.style.transition = 'ease 300ms';
 })
 
-let indexArt = document.getElementById("indexMenuArt")
 indexArt.addEventListener("mouseenter", () => {
     indexMenu.style.backgroundImage = 'linear-gradient(0.25turn, #000000F0, #00000000), url("source/optimizedIllustrationArt.png")'
     indexMenu.style.backgroundPosition = "right 38% bottom"
@@ -74,7 +91,6 @@ indexArt.addEventListener("mouseleave", () => {
         indexMenu.style.transition = 'ease 300ms';
 })
 
-let indexPro = document.getElementById("indexMenuPro")
 indexPro.addEventListener("mouseenter", () => {
     indexMenu.style.backgroundImage = 'linear-gradient(0.25turn, #000000B0, #00000000), url("source/optimizedIllustrationPro.png")'
     indexMenu.style.backgroundPosition = "right 50% bottom"
@@ -91,3 +107,42 @@ indexPro.addEventListener("mouseleave", () => {
         indexMenu.style.background = '#00000070'
         indexMenu.style.transition = 'ease 300ms';
 })
+
+
+//BOUTON MODE SOMBRE
+// D'abord on mets le darkmode si la personne a un darkmode sur son navigateur
+const isDarkMode = () => window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+nightModeCheck.checked = isDarkMode()
+changeDarkmode()
+
+nightModeCheck.addEventListener('click', function() {
+    changeDarkmode()
+})
+
+function changeDarkmode() {
+    let condition = nightModeCheck.checked
+
+    if (condition) {
+        for (const element of all) {
+            element.classList.add('dark')
+        }
+        for (const element of changeThisLogo) {
+            let elementURL = element.src.toString()
+            if (!elementURL.includes('Green')) {
+                elementURL = elementURL.replace('.svg','Green.svg')
+                element.src = elementURL
+            }
+        }
+    } else {
+        for (const element of all) {
+            element.classList.remove('dark')
+        }
+        for (const element of changeThisLogo) {
+            let elementURL = element.src.toString()
+            if (elementURL.includes('Green')) {
+                elementURL = elementURL.replace('Green','')
+                element.src = elementURL
+            }
+        }
+    }
+}

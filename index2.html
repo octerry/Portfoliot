@@ -16,13 +16,13 @@ MADE ON EARTH BY HUMANS
     <title>Acceuil</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/d/d2/Codinglogo.jpg"> <!-- A CHANGER !!!!!!-->
-    <script defer src="Function.js"></script>
+    <script defer src="function.js"></script>
 </head>
 <body class="indexBody">
-    <header class="indexHeader"><!-- Partie présentation -->
+    <header id="indexHeader"><!-- Partie présentation -->
         <div id="indexMenu">
             <div class="indexMenuCross" onclick="indexHideMenu()">
-                <svg viewBox="0 0 24 24" fill="white">
+                <svg viewBox="0 0 24 24" id="indexMenuSvg" fill="#fff">
                     <path d="M18.47 6.47 12.942 12l5.53 5.53-.942.94L12 12.942l-5.53 5.53-.94-.942L11.058 12l-5.53-5.53.942-.94L12 11.058l5.53-5.53.94.942Z"></path>
                 </svg>
             </div>
@@ -42,7 +42,7 @@ MADE ON EARTH BY HUMANS
             <div class="indexHeaderLeftPart">
                 <div onclick="indexHideMenu()">
                     <svg class="amburgerMenu" viewBox="0 0 512 512">
-                        <path d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z" fill="#fff" fill-opacity="1"></path>
+                        <path d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"></path>
                     </svg>
                 </div>
                 <a href="section-code.html"><h3>CODE</h3></a>
@@ -53,7 +53,7 @@ MADE ON EARTH BY HUMANS
             </div>
             <label class="darkModeToggleLabel"> <!-- Credit : https://uiverse.io/mobinkakei/great-skunk-8 -->
                 <div class="darkModeToggle">
-                    <input class="darkModeToggle-state" type="checkbox" name="check" value="check" checked>
+                    <input id="darkModeToggle-state" type="checkbox" name="check" value="check" checked>
                     <div class="darkModeToggleIndicator">
                         <svg width="2vh" height="2vh" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.60456 28.1204C-6.39547 14.6561 12.279 0.548822 12.1044 2.12036C11.1046 11.1203 12.2877 14.8038 17.1044 19.6204C22.1046 24.6204 30.1046 23.6204 33.6046 22.6204C37.1046 21.6204 20.6046 42.6203 6.60456 28.1204Z" stroke="#ADBED5" stroke-width="4"/>
@@ -91,34 +91,34 @@ MADE ON EARTH BY HUMANS
         </div>
         <div class="indexMainExperience">
             <h1>Experience</h1>
-            <p>Blah blah blah CHANGE MOIIIIIIII</p>
+            <p>L'école, les différentes missions de l'IIM et les travaux peronnels m'ont permis de développer ma cohésion et mon regard sur le travail en général</p>
             <h2>Pour plus de précision, visiter la <a href="section-pro.html">section professionelle</a></h2>
         </div>
         <div class="indexMainLogiciel">
-            <h1>Logiciels maitrisés</h1>
+            <h1>Logiciels maitrisés/en apprentissage</h1>
             <div class="indexMainLogicielInner">
                 <div>
-                    <img src="source/PythonGreen.svg" alt="imagePython">
+                    <img src="source/PythonGreen.svg" alt="imagePython" class="logoToChange">
                     <h2>Python</h2>
                 </div>
                 <div>
-                    <img src="source/WebGreen.svg" alt="imageWeb">
+                    <img src="source/WebGreen.svg" alt="imageWeb" class="logoToChange">
                     <h2>Web</h2>
                 </div>
                 <div>
-                    <img src="source/GithubGreen.svg" alt="imageGithub">
+                    <img src="source/GithubGreen.svg" alt="imageGithub" class="logoToChange">
                     <h2>Github</h2>
                 </div>
                 <div>
-                    <img src="source/FusionGreen.svg" alt="imageFusion">
+                    <img src="source/FusionGreen.svg" alt="imageFusion" class="logoToChange">
                     <h2>Fusion</h2>
                 </div>
                 <div>
-                    <img src="source/BlenderGreen.svg" alt="imageBlender">
+                    <img src="source/BlenderGreen.svg" alt="imageBlender" class="logoToChange">
                     <h2>Blender</h2>
                 </div>
                 <div>
-                    <img src="source/AdobeGreen.svg" alt="imageAdobe">
+                    <img src="source/AdobeGreen.svg" alt="imageAdobe" class="logoToChange">
                     <h2>Adobe</h2>
                 </div>
             </div>
@@ -158,7 +158,7 @@ MADE ON EARTH BY HUMANS
                 Domaine et hébergement : OVH
             </p>
             <h2>Dernière actualisation du site</h2>
-            <p>21/11/2025</p>
+            <p>08/01/2025</p>
         </div>
     </footer>
 </body>
