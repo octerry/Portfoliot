@@ -13,7 +13,7 @@ function drawInner1() {
     const ctx = canvas.getContext("2d");
     const gradient = ctx.createLinearGradient(0, 0, 2000, 0);
 
-    // Add three color stops
+    ctx.globalCompositeOperation = 'destination-over'
     gradient.addColorStop(.2, "#000");
     gradient.addColorStop(.8, "#00000000");
     ctx.fillStyle = gradient;
@@ -31,7 +31,7 @@ function drawInner2() {
     const ctx = canvas.getContext("2d");
     const gradient = ctx.createLinearGradient(0, 0, 2000, 0);
 
-    // Add three color stops
+    ctx.globalCompositeOperation = 'destination-over'
     gradient.addColorStop(.2, "#00000000");
     gradient.addColorStop(.8, "#444448");
     ctx.fillStyle = gradient;
@@ -49,7 +49,7 @@ function drawInner3() {
     const ctx = canvas.getContext("2d");
     const gradient = ctx.createLinearGradient(0, 0, 2000, 0);
 
-    // Add three color stops
+    ctx.globalCompositeOperation = 'destination-over'
     gradient.addColorStop(0, "#00000000");
     gradient.addColorStop(.8, "#00000060");
     ctx.fillStyle = gradient;
@@ -67,7 +67,7 @@ function drawInner4() {
     const ctx = canvas.getContext("2d");
     const gradient = ctx.createLinearGradient(0, 0, 2000, 0);
 
-    // Add three color stops
+    ctx.globalCompositeOperation = 'destination-over'
     gradient.addColorStop(.2, "#000");
     gradient.addColorStop(.8, "#00000060");
     ctx.fillStyle = gradient;
@@ -85,7 +85,7 @@ function drawInner5() {
     const ctx = canvas.getContext("2d");
     const gradient = ctx.createLinearGradient(0, 0, 2000, 0);
 
-    // Add three color stops
+    ctx.globalCompositeOperation = 'destination-over'
     gradient.addColorStop(.2, "#000");
     gradient.addColorStop(.8, "#00000060");
     ctx.fillStyle = gradient;
