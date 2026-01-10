@@ -17,6 +17,7 @@ MADE ON EARTH BY HUMANS
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/d/d2/Codinglogo.jpg"> <!-- A CHANGER !!!!!!-->
     <script defer src="robotBg.js"></script>
+    <script defer src="slideMenu.js"></script>
 </head>
 <body class="robotBody">
     <div class="robotBg">
@@ -26,16 +27,52 @@ MADE ON EARTH BY HUMANS
         <canvas id="robotBgInner4" width="2000" height="2000"></canvas>
         <canvas id="robotBgInner5" width="2000" height="2000"></canvas>
     </div>
-    <div id="robotMain">
-        <h1 class="title">ROBOTIQUE</h1>
-        <p class="coverDescription">J'ai découvert la robotique avec la science-fiction et dés que j'ai pu je n'ai pas arrété de démonter tous les objets inutilisables que je trouvais pour voir comment ils fonctionnaient jusqu'à ce que je devienne indépendant et que je me lance dans des projets personnels</p>
-        <div id="sectionFusion">
-            <div id="prahsmDiv" class="robotProjectPresentation">
-
+    <header>
+        <div id="indexMenu">
+            <div class="indexMenuCross" onclick="indexHideMenu()">
+                <svg viewBox="0 0 24 24" id="indexMenuSvg" fill="#fff">
+                    <path d="M18.47 6.47 12.942 12l5.53 5.53-.942.94L12 12.942l-5.53 5.53-.94-.942L11.058 12l-5.53-5.53.942-.94L12 11.058l5.53-5.53.94.942Z"></path>
+                </svg>
             </div>
-            <div id="ironSpiderDiv" class="robotProjectPresentation">
-                
+            <hr>
+            <div class="indexMenuSelection">
+                <h1>Portfolio</h1>
+                <h3>terrysegaunes.fr</h3>
+                <div>
+                    <a href="index2.html" id="indexAcceuil"><h2>ACCEUIL</h2></a>
+                    <a href="section-code.html" id="indexMenuCode"><h2>CODE</h2></a>
+                    <a href="section-robot.html" id="indexMenuRobot"><h2>ROBOTIQUE</h2></a>
+                    <a href="section-art.html" id="indexMenuArt"><h2>ART</h2></a>
+                    <a href="section-pro.html" id="indexMenuPro"><h2>PROFESSIONNEL</h2></a>
+                </div>
             </div>
         </div>
-    </div>
+        <div id="robotHeader">
+            <div onclick="indexHideMenu()">
+                <svg class="amburgerMenu robot" viewBox="0 0 512 512">
+                    <path d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"></path>
+                </svg>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="robotMain">
+            <h1 class="title">ROBOTIQUE</h1>
+            <p class="coverDescription">J'ai découvert la robotique avec la science-fiction et dés que j'ai pu je n'ai pas arrété de démonter tous les objets inutilisables que je trouvais pour voir comment ils fonctionnaient jusqu'à ce que je devienne indépendant et que je me lance dans des projets personnels</p>
+            <div id="sectionFusion" class="robotSection">
+                <h1>Fusion 360</h1>
+                <div id="prahsmDiv" class="robotProjectPresentation">
+                    <h3>Début : 2025</h3>
+                    <h2>P.R.A.H.S.M.</h2>
+                    <p>PROJET DE RECREATION D'UN AUTOMATE HUMANOIDE SEMI MOBILE</p>
+                </div>
+                <div id="ironSpiderDiv" class="robotProjectPresentation">
+                    <h3>Début : 2023</h3>
+                    <h2>Iron Spider</h2>
+                    <p>BRAS MECANIQUES POUR UN COSPLAY</p>
+                </div>
+            </div>
+            <div id="sectionAutre" class="robotSection">
+        </div>
+    </main>
 </body>
