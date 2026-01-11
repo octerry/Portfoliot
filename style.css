@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&family=Jersey+10&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Lekton:ital,wght@0,400;0,700;1,400&family=Lexend+Zetta:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Lekton:ital,wght@0,400;0,700;1,400&family=Lexend+Zetta:wght@100..900&display=swap&family=Nokora:wght@100..900&display=swap&family=Noto+Sans+Thai+Looped:wght@100..900&display=swap');
 @font-face {
     font-family: 'Post No Bills Jaffna ExtraBold Regular';
     font-style: normal;
@@ -756,6 +756,93 @@ body{
 /*PAGE CODE*/
 .codeBody{
     color: #fff;
+    background-color: #0D1117;
+    width: 100%;
+}
+
+.codeBody a {
+    text-decoration: none;
+}
+
+.codeBody #code_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: clamp(2vh,20px, 2vw);
+    background-color: #25292E;
+}
+
+#code_header #code_header_left_part {
+    display: flex;
+    align-items: center;
+}
+
+#code_header_left_part .header_button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: clamp(1vh,10px,1vw);  
+    font-family: 'Nokora';
+    font-weight: 100;
+}
+
+#code_header_left_part #code_logo {
+    width: clamp(3vh,30px,3vw);
+    margin-right: clamp(1.5vh,15px,1.5vw);
+}
+
+#code_header_left_part .down_arrow_svg {
+    width: clamp(1.5vh,15px,1.5vw);
+    margin-right: clamp(1.5vh,15px,1.5vw);
+    margin-left: clamp(.5vh,5px,.5vw);
+}
+
+.codeBody #code_header_right_part {
+    display: flex;
+    align-items: center;
+    font-family: 'Noto Sans Thai Looped';
+    font-size: clamp(1vh,10px,1vw);
+    font-weight: 100;
+}
+
+#code_header_right_part #code_searchbar {
+    display: flex;
+    align-items: center;
+    border: .1px #fff solid;
+    border-radius: clamp(1vh,10px,1vw);
+    padding: clamp(.2vh,2px,.2vw) clamp(.5vh,5px,.5vw);
+}
+
+#code_searchbar #search_svg {
+    width: clamp(2vh,20px,2vw);
+    margin-right: clamp(1vh,10px,1vw);
+}
+
+#code_searchbar #searchbar {
+    background-color: transparent;
+    border: none;
+    width: clamp(15vh,150px,15vw);
+    font-size: clamp(1.5vh,15px,1.5vw);
+    color: #fff;
+}
+
+#code_searchbar #search_bar_command_button {
+    border: .1px #fff solid;
+    border-radius: clamp(.5vh,5px,.5vw);
+    padding: 0 clamp(.5vh,5px,.5vw);
+}
+
+#code_header_right_part #sign_up_div {
+    border: .1px #fff solid;
+    border-radius: clamp(1vh,10px,1vw);
+    padding: clamp(.2vh,2px,.2vw) clamp(.5vh,5px,.5vw);
+    margin-left: clamp(1vh,10px,1vw);
+}
+
+@media (max-width: 500px) {
+    .codeBody #code_header_right_part {
+        display: none;
+    }
 }
 
 /*PAGE ROBOTIQUE*/
