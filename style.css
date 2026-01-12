@@ -845,6 +845,110 @@ body{
     }
 }
 
+#code_main #code_title {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: clamp(2vh,20px,2vw);
+}
+
+#code_title svg {
+    width: clamp(2vh,20px,2vw);
+    margin-right: clamp(1vh,10px,1vw);
+}
+
+#code_title h1 {
+    font-size: clamp(2vh,20px,2vw);
+    font-family: 'Noto Sans Thai Looped';
+    margin: clamp(.1vh,1px,.1vw);
+}
+
+#code_user_title {
+    color: #3E73D5;
+    font-weight: 300;
+}
+
+#code_between {
+    color: #565A62;
+}
+
+#code_nom_section {
+    color: #3E73D5;
+    font-weight: 500;
+}
+
+#public_element {
+    font-size: clamp(1vh,10px,1vw);
+    font-family: 'Noto Sans Thai Looped';
+    color: #565A62;
+    margin-left: clamp(1vh,10px,1vw);
+    padding: 0 clamp(.5vh,5px,.5vw);
+    border: 1px #565A62 solid;
+    border-radius: 100vw;
+}
+
+#code_main #code_up_buttons {
+    display: flex;
+}
+
+#code_up_buttons .up_button {
+    display: flex;
+    align-items: center;
+    margin: clamp(1vh,10px,1vw) clamp(.5vh,20px,2vw);
+}
+
+.up_button svg {
+    width: clamp(2vh,20px,2vw);
+    margin-right: clamp(.5vh,5px,.5vw);
+}
+
+.up_button h1 {
+    font-size: clamp(2vh,20px,2vw);
+    font-family: 'Nokora';
+    font-weight: 200;
+}
+
+#code_main #code_up_line {
+    width: 100vw;
+    height: .1vh;
+    background-color: #60656C;
+}
+
+#code_up_line #code_up_cursor {
+    position: relative;
+    height: clamp(.2vh,2px,.2vw);
+    width: clamp(13vh,130px,13vw);
+    margin-left: clamp(.5vh,20px,2vw);
+    background-color: #AF5534;
+}
+
+#downpart #code_left_content {
+    width: 30vw;
+}
+
+#code_left_content #file_up_text {
+    display: flex;
+    align-items: center;
+    padding: clamp(1vh,10px,1vw);
+}
+
+#file_up_text h1 {
+    font-size: clamp(2vh,20px,2vw);
+    font-family: 'Nokora';
+    font-weight: 300;
+    margin-left: clamp(.5vh,5px,.5vw);
+}
+
+#file_up_text #file_icon {
+    padding: clamp(.5vh,5px,.5vw);
+    background-color: #D9D9D920;
+    border-radius: clamp(.5vh,5px,.5vw);
+}
+
+#file_icon svg {
+    width: clamp(1.5vh,15px,1.5vw);
+}
+
 /*PAGE ROBOTIQUE*/
 .robotBody{
     color: #fff;
