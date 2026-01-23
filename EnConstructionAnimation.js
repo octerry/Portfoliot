@@ -1,4 +1,14 @@
- // Create particle effect
+// Coucou toi qui regarde dans le code
+
+
+// /‾‾‾‾‾\ /‾‾‾‾‾] [‾‾‾‾‾‾‾‾] |‾‾‾‾‾] |‾‾‾‾‾\ |‾‾‾‾‾\ |‾| /‾/
+// | |‾| | | |‾‾‾   ‾‾|  |‾‾  | |‾‾‾  |     | |     | | |/ /
+// | | | | | |        |  |    |  ___] |     / |     / |  _/
+// | |_| | | |___     |  |    | |___  | |\ \  | |\ \  | |
+// \_____/ \_____]    |__|    |_____] |_| \_\ |_| \_\ |_|
+// MADE ON EARTH BY HUMANS
+
+// Create particle effect
 document.addEventListener('DOMContentLoaded', () => {
     const particlesContainer = document.getElementById('particles-container');
     if (!particlesContainer) {
