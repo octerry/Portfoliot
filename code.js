@@ -8,7 +8,9 @@
 // \_____/ \_____]    |__|    |_____] |_| \_\ |_| \_\ |_|
 // MADE ON EARTH BY HUMANS
 
-const headerButton = document.getElementsByClassName('header_button')
+const codeCursor = document.getElementById('code_up_cursor');
+
+const headerButton = document.getElementsByClassName('header_button');
 const acceuilButton = headerButton[0];
 const codeButton = headerButton[1];
 const robotButton = headerButton[2];
@@ -44,6 +46,8 @@ function goToPreambule() {
     webPageContent.style.display = "none";
     pythonPageContent.style.display = "none";
     autrePageContent.style.display = "none";
+    codeCursor.style.marginLeft = "clamp(3vh,30px,3vw)"
+    codeCursor.style.width = "clamp(13vh,130px,13vw)"
 }
 
 function goToWeb() {
@@ -51,6 +55,8 @@ function goToWeb() {
     webPageContent.style.display = "block";
     pythonPageContent.style.display = "none";
     autrePageContent.style.display = "none";
+    codeCursor.style.marginLeft = "clamp(21vh,210px,21vw)"
+    codeCursor.style.width = "clamp(8vh,80px,8vw)"
 }
 
 function goToPython() {
@@ -58,6 +64,8 @@ function goToPython() {
     webPageContent.style.display = "none";
     pythonPageContent.style.display = "block";
     autrePageContent.style.display = "none";
+    codeCursor.style.marginLeft = "clamp(34vh,340px,34vw)"
+    codeCursor.style.width = "clamp(10vh,100px,10vw)"
 }
 
 function goToAutre() {
@@ -65,4 +73,6 @@ function goToAutre() {
     webPageContent.style.display = "none";
     pythonPageContent.style.display = "none";
     autrePageContent.style.display = "block";
+    codeCursor.style.marginLeft = "clamp(49vh,490px,49vw)"
+    codeCursor.style.width = "clamp(9vh,90px,9vw)"
 }

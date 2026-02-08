@@ -942,7 +942,7 @@ body{
 }
 
 #code_main #code_up_line {
-    width: 100vw;
+    max-width: 100vw;
     height: .1vh;
     background-color: #60656C;
 }
@@ -951,7 +951,7 @@ body{
     position: relative;
     height: clamp(.2vh,2px,.2vw);
     width: clamp(13vh,130px,13vw);
-    margin-left: clamp(.5vh,20px,2vw);
+    margin-left: clamp(3vh,30px,3vw);
     background-color: #AF5534;
 }
 
@@ -1281,6 +1281,41 @@ body{
     background-size: cover;
 }
 
+#simulBg {
+    background: radial-gradient(#0D111700, #0D111790), url(source/simulIllustration.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#noxVillaeBg {
+    background: radial-gradient(#0D111700, #0D111790), url(source/noxVillaeIllustration.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#nsiBg {
+    background: radial-gradient(#0D111700, #0D111790), url(source/pythonNSIIllustration.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#expressIoBg {
+    background: radial-gradient(#0D111700, #0D111790), url(source/expressioIllustration.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#arduinoBg {
+    background: radial-gradient(#0D111700, #0D111790), url(source/arduinoIllustration.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .links {
     margin: clamp(1vh,10px,1vw);
     display: flex;
@@ -1322,7 +1357,7 @@ body{
     justify-content: center;
     background-color: #000;
     border-radius: 100vh;
-    border: 2px #fff solid;
+    border: 1px #fff solid;
     padding: clamp(.3vh,3px,.3vw) clamp(.8vh,8px,.8vw);
 }
 
@@ -1342,6 +1377,14 @@ body{
 
 .tag_web {
     background: linear-gradient(#22455B, #001A4A);
+}
+
+.tag_iot {
+    background: linear-gradient(#5B2222, #4A0000);
+}
+
+.tag_jv {
+    background: linear-gradient(#6B6B6B, #1B1B1B);
 }
 
 .tagImg {
