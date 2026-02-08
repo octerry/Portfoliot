@@ -1,3 +1,13 @@
+/* Coucou toi qui regarde dans le code
+
+
+/‾‾‾‾‾\ /‾‾‾‾‾] [‾‾‾‾‾‾‾‾] |‾‾‾‾‾] |‾‾‾‾‾\ |‾‾‾‾‾\ |‾| /‾/
+| |‾| | | |‾‾‾   ‾‾|  |‾‾  | |‾‾‾  |     | |     | | |/ /
+| | | | | |        |  |    |  ___] |     / |     / |  _/
+| |_| | | |___     |  |    | |___  | |\ \  | |\ \  | |
+\_____/ \_____]    |__|    |_____] |_| \_\ |_| \_\ |_|
+MADE ON EARTH BY HUMANS */
+
 /*POLICES D'ECRITURES*/
 @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Oswald:wght@200..700&family=PT+Sans+Narrow:wght@400;700&family=Timmana&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&family=Jersey+10&display=swap');
@@ -783,7 +793,17 @@ body{
     justify-content: space-around;
     font-size: clamp(1vh,10px,1vw);  
     font-family: 'Nokora';
-    font-weight: 100;
+    padding: clamp(.2vh,2px,.2vw) clamp(1vh,10px,1vw);
+    border-radius: clamp(1vh,10px,1vw);
+}
+
+.header_button:hover {
+    cursor: pointer;
+    background-color: #D9D9D930;
+}
+
+.header_button h1 {
+    font-weight: 200;
 }
 
 #code_header_left_part #code_logo {
@@ -838,6 +858,11 @@ body{
     border-radius: clamp(1vh,10px,1vw);
     padding: clamp(.2vh,2px,.2vw) clamp(.5vh,5px,.5vw);
     margin-left: clamp(1vh,10px,1vw);
+}
+
+#sign_up_div h2 {
+    font-family: 'Nokora';
+    font-weight: 300;
 }
 
 @media (max-width: 500px) {
@@ -895,7 +920,14 @@ body{
 #code_up_buttons .up_button {
     display: flex;
     align-items: center;
-    margin: clamp(1vh,10px,1vw) clamp(.5vh,20px,2vw);
+    margin: clamp(1vh,10px,1vw) clamp(2vh,20px,2vw);
+    padding: clamp(.5vh,5px,.5vw) clamp(1vh,10px,1vw);
+    border-radius: clamp(1vh,10px,1vw);
+}
+
+.up_button:hover {
+    cursor: pointer;
+    background-color: #D9D9D930;
 }
 
 .up_button svg {
@@ -1057,8 +1089,118 @@ body{
     margin-left: clamp(2vh,20px,2vw);
 }
 
-#preambule_content {
-    padding: clamp(2vh,20px,2vw) clamp(1vh,10px,1vw);
+.section_page_content {
+    padding: clamp(5vh,50px,5vw) clamp(10vh,100px,10vw);
+    font-family: 'Nokora';
+}
+
+.big_big_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.big_big_title h1 {
+    font-weight: 100;
+    font-size: clamp(5vh,50px,5vw);  
+}
+
+.big_title {
+    font-weight: 300;
+    font-size: clamp(4vh,40px,4vw);
+}
+
+.big_title_underline {
+    width: 100%;
+    height: 1px;
+    background-color: #60656C;
+    margin-bottom: clamp(1vh,10px,1vw);
+}
+
+.preambule_img {
+    width: clamp(8vh,80px,8vw);
+    margin-right: clamp(1vh,10px,1vw);
+}
+
+.preambule_p {
+    margin: clamp(1vh,10px,1vw) 0;
+    font-weight: 100;
+    font-size: clamp(2vh,20px,2vw);
+}
+
+.preambule_p a {
+    color: #3E73D5;
+    font-weight: 200;
+}
+
+#preambule_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preambule_button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: clamp(1.5vh,15px,1.5vw);
+    width: 30%;
+    border: 5px #fff solid;
+    border-radius: clamp(2vh,20px,2vw);
+    height: clamp(25vh,250px,25vw);
+    padding: clamp(6vh,60px,6vw);
+    margin: clamp(1vh,10px,1vw);
+    transition: 250ms;
+    z-index: 0;
+}
+
+.preambule_button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    font-size: clamp(2vh,20px,2vw);
+    background-size: clamp(12vh,120px,12vw) ,contain !important;
+    border: 1px #fff solid;
+    padding: clamp(1vh,10px,1vw);
+    z-index: 1;
+}
+
+.preambule_button:hover > .button_display h1 {
+    font-size: clamp(10vh,100px,10vw);
+}
+
+#web_button {
+    background: url(source/displayWeb.svg), linear-gradient(0.30turn, #09330C, #000 50%, #20349A);
+    background-repeat: no-repeat;
+    background-size: clamp(15vh,150px,15vw) ,contain;
+    background-position: center;
+}
+
+#python_button {
+    background: url(source/displayPython.svg), linear-gradient(0.3turn, #091642, #000 50%, #413B12);
+    background-repeat: no-repeat;
+    background-size: clamp(15vh,150px,15vw) ,contain;
+    background-position: center;
+}
+
+#autre_button {
+    background: url(source/displayGear.svg), linear-gradient(0.30turn, #291241, #682EA7);
+    background-repeat: no-repeat;
+    background-size: clamp(15vh,150px,15vw) ,contain;
+    background-position: center;
+}
+
+.button_display img {
+    position: absolute;
+    margin-top: -1%;
+    margin-left: -2.5%;
+    z-index: -1;
+}
+
+.button_display h1 {
+    font-size: clamp(7vh,70px,7vw);
+    transition: 250ms;
 }
 
 /*PAGE ROBOTIQUE*/
