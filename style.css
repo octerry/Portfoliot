@@ -13,7 +13,7 @@ MADE ON EARTH BY HUMANS */
 @import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&family=Jersey+10&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Lekton:ital,wght@0,400;0,700;1,400&family=Lexend+Zetta:wght@100..900&display=swap&family=Nokora:wght@100..900&display=swap&family=Noto+Sans+Thai+Looped:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Lekton:ital,wght@0,400;0,700;1,400&family=Lexend+Zetta:wght@100..900&display=swap&family=Nokora:wght@100..900&display=swap&family=Noto+Sans+Thai+Looped:wght@100..900&display=swap&family=Nixie+One&display=swap');
 @font-face {
     font-family: 'Post No Bills Jaffna ExtraBold Regular';
     font-style: normal;
@@ -1135,7 +1135,7 @@ body{
 
 #preambule_buttons {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 
@@ -1201,6 +1201,121 @@ body{
 .button_display h1 {
     font-size: clamp(7vh,70px,7vw);
     transition: 250ms;
+}
+
+.date_element {
+    margin-top: clamp(4vh,40px,4vw);
+    display: flex;
+    justify-content: space-between;
+}
+
+.date_element h1 {
+    font-weight: 300;
+    align-self: center;
+    font-size: clamp(2vh,20px,20vw);
+}
+
+.date_element h2 {
+    font-weight: 100;
+    font-size: clamp(2vh,20px,20vw);
+}
+
+.date_element div {
+    width: clamp(5vh,50px,5vw);
+}
+
+.project_illustration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project_illustration_bg {
+    display: flex;
+    flex-direction: column;
+    width: clamp(84vh,840px,84vw);
+    height: clamp(47.3vh,473px,47.3vw);
+    border-radius: clamp(2vh,20px,2vw);
+    box-shadow: inset clamp(2vh,20px,2vw) clamp(2vh,20px,2vw) clamp(.5vh,5px,.5vw) #00000050;
+}
+
+#betterDevinciBg {
+    background: radial-gradient(#0D111700, #0D111770), url(source/betterDevinciIllustration.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.links {
+    margin: clamp(1vh,10px,1vw);
+    display: flex;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2B5E2B;
+    height: clamp(5vh,50px,5vw);
+    width: clamp(5vh,50px,5vw);
+    padding: clamp(2vh,20px,2vw);
+    margin: clamp(.5vh,5px,.5vw);
+    border-radius: clamp(1.5vh,15px,1.5vw);
+    transition: 250ms;
+}
+
+.link:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: #102e10;
+}
+
+.tags {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: clamp(-7vh,-70px,-7vw);
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    border-radius: 100vh;
+    border: 2px #fff solid;
+    padding: clamp(.3vh,3px,.3vw) clamp(.8vh,8px,.8vw);
+}
+
+.tag h2 {
+    font-size: clamp(1.3vh,13px,1.3vw);
+    font-weight: 300;
+}
+
+.tag_extension {
+    background: linear-gradient(#44225B, #21004A);
+}
+
+.tagImg {
+    width: clamp(2.5vh,25px,2.5vw);
+    margin-left: clamp(.5vh,5px,.5vw);
+}
+
+.project_big_title {
+    display: flex;
+    justify-content: center;
+    margin:  clamp(2vh,20px,2vw);
+}
+
+.project_big_title h1 {
+    font-family: "Nixie One";
+    font-weight: 100;
+    font-size: clamp(4vh,40px,4vw);
+}
+
+.project_p {
+    padding: 0 clamp(30vh,300px,30vw);
+    font-weight: 200;
 }
 
 /*PAGE ROBOTIQUE*/
