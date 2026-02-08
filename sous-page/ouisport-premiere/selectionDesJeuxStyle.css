@@ -1,0 +1,57 @@
+body{
+    background: rgb(255, 255, 255);
+}
+.fixed-block {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(50, 195, 206);
+    color: #fff;
+    text-align: center;
+    z-index: 1000;
+}
+.content {
+    margin-top: 90px; /* Pour éviter que le contenu soit caché derrière le bloc fixe */
+    padding: 40px;
+}
+
+.back{
+    background-color: white;
+    width: max-content;
+    margin: 50px;
+    border-radius: 20px;
+    border: 4px inset #ffffff;
+    display:grid;
+    position:fixed;
+}
+.back:hover{
+    border: 4px inset black;
+}
+
+.titrenomove{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    top: 30px;
+}
+
+img.presentation{
+    border-radius: 30px;
+    clip: rect(0,-100px,0,-100px);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    float: right;
+    width: 500px;
+    height: 300px;
+}
+img.presentation:hover{
+    border: 4px groove rgb(147, 50, 177);
+    width: 600px;
+    height: 375px;
+}
+td.titresport{
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+

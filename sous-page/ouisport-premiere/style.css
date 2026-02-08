@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    background: linear-gradient(0.25turn, #5c1ead, #0059ff, #00c3ca);
+    color: rgb(255, 255, 255);
+}
+
+.back{
+    background-color: white;
+    width: max-content;
+    margin: 50px;
+    border-radius: 20px;
+    border: 4px inset white;
+    display:grid;
+    position:fixed;
+}
+.back:hover{
+    border: 4px inset black;
+}
+
+button{
+    display: inline-block;
+    border-radius: 10px;
+    border: 4px outset #ffffff;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    font-family:'Courier New', Courier, monospace;
+}
+button.bleu{
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+}
+button.bleu:hover{
+    background: linear-gradient(blue,rgb(0, 0, 110));
+    color: white;
+    border: 4px outset black;
+}
+button.blanc{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+button.blanc:hover{
+    background: linear-gradient(white,grey);
+    color: rgb(255, 255, 255);
+    border: 4px outset black;
+}
+button.rouge{
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+}
+button.rouge:hover{
+    background: linear-gradient(red,rgb(110, 0, 0));
+    color: white;
+    border: 4px outset black;
+}
+
+h1.titre{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nom{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+dd{
+    margin: auto;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+

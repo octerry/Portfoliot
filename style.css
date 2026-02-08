@@ -1240,7 +1240,42 @@ body{
 }
 
 #betterDevinciBg {
-    background: radial-gradient(#0D111700, #0D111770), url(source/betterDevinciIllustration.png);
+    background: radial-gradient(#0D111700, #0D111790), url(source/betterDevinciIllustration.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#restaurantRoyalBg {
+    background: radial-gradient(#0D111700, #0D111790), url(source/restaurantRoyalIllustration.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#portfoliotBg {
+    background: radial-gradient(#0D111700, #0D111790), url(source/illustrationPortfoliot.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#rowBg {
+    background: radial-gradient(#0D111700, #0D111790), url(source/rowIllustration.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#oldPortfoliotBg {
+    background: radial-gradient(#0D111700, #0D111790), url(source/oldPortfoliotIllustration.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#joBg {
+    background: radial-gradient(#0D111700, #0D111790), url(source/ouisportIllustration.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1270,6 +1305,10 @@ body{
     background-color: #102e10;
 }
 
+.link img {
+    width: clamp(4vh,40px,4vw);
+}
+
 .tags {
     display: flex;
     margin-left: auto;
@@ -1296,9 +1335,26 @@ body{
     background: linear-gradient(#44225B, #21004A);
 }
 
+.tag_ecole {
+    background: linear-gradient(#863D1E, #431800);
+    margin-right: clamp(.5vh,5px,.5vw);
+}
+
+.tag_web {
+    background: linear-gradient(#22455B, #001A4A);
+}
+
 .tagImg {
     width: clamp(2.5vh,25px,2.5vw);
     margin-left: clamp(.5vh,5px,.5vw);
+}
+
+#minia_extension {
+    position: relative;
+    width: clamp(20vh,200px,20vw);
+    margin-top: clamp(-8vh,-80px,-80vw);
+    margin-left: clamp(70vh,700px,70vw);
+    border-radius: clamp(1vh,10px,1vw);
 }
 
 .project_big_title {
@@ -1316,6 +1372,10 @@ body{
 .project_p {
     padding: 0 clamp(30vh,300px,30vw);
     font-weight: 200;
+}
+
+.margin_top {
+    margin-top: clamp(3vh,30px,3vw);
 }
 
 /*PAGE ROBOTIQUE*/
