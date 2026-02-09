@@ -1,0 +1,95 @@
+/* IMPORTER LES POLICES */
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Homenaje&family=Hubballi&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* PAGE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#1F2F3A, #2A2440);
+    height: 100vh;
+    width: 100vw;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+header img {
+    width: calc(1vw + 3vh);
+}
+
+header h1 {
+    font-size: calc(1vw + 3vh);
+    font-family: "Homenaje";
+    font-weight: 100;
+    margin-left: 1vh;
+}
+
+.element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #D9D9D911;
+    max-width: 90vw;
+    min-width: 40vw;
+    margin: 2vh;
+    padding: 1vh;
+    border-radius: 1vh;
+    transition: 150ms;
+}
+
+.element:hover {
+    background-color: #00000000;
+    border: 1px #fff solid;
+}
+
+.element h1 {
+    font-family: "Hubballi";
+    font-weight: 100;
+    font-size: 4vh;
+    text-align: center;
+    color: #fff
+}
+
+.element h2 {
+    font-family: "Hind";
+    font-weight: 200;
+    font-size: 3vh;
+    color: #73ACED
+}
+
+#signalement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #978E31;
+    padding: 1vh;
+    border-radius: 1vh;
+}
+
+#signalement img {
+    width: 3vh;
+}
+
+#signalement h3 {
+    color: #fff;
+    font-family: "Josefin Sans";
+    font-weight: 350;
+    font-size: 3vh;
+    margin-left: 1vh;
+}

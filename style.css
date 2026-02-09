@@ -804,6 +804,64 @@ body{
 
 .header_button h1 {
     font-weight: 200;
+    user-select: none;
+}
+
+.header_menu {
+    display: none;
+    position: absolute;
+    top: clamp(5vh,50px,5vw);
+    background-color: #fff;
+    border-radius: clamp(1vh,10px,1vw);
+    padding: clamp(1vh,10px,1vw) clamp(2vh,20px,2vw);
+    padding-top: clamp(2vh,20px,2vw);
+    font-family: "Nokora";
+}
+
+#acceuil_menu {
+    left: clamp(6vh,60px,6vw);
+}
+
+#code_menu {
+    left: clamp(18vh,180px,18vw);
+}
+
+#robotique_menu {
+    left: clamp(28vh,280px,28vw);
+}
+
+#art_menu {
+    left: clamp(43vh,430px,43vw);
+}
+
+#plus_menu {
+    left: clamp(52vh,520px,52vw);
+}
+
+.header_menu_inner {
+    padding: 0 clamp(1vh,10px,1vw);
+    border-radius: clamp(.5vh,5px,.5vw);
+}
+
+.header_menu_inner:hover {
+    cursor: pointer;
+    background-color: #00000020;
+}
+
+.header_menu_inner h1 {
+    color: #202020;
+    user-select: none;
+    font-size: clamp(2vh,20px,2vw);
+    font-weight: 500;
+}
+
+.header_menu_inner h2 {
+    color: #60656C;
+    user-select: none;
+    font-size: clamp(1.2vh,12px,1.2vw);
+    font-weight: 300;
+    margin-top: clamp(-.8vh,-8px,-.8vw);
+    margin-bottom: clamp(.8vh,8px,.8vw);
 }
 
 #code_header_left_part #code_logo {
@@ -1311,6 +1369,13 @@ body{
 
 #arduinoBg {
     background: radial-gradient(#0D111700, #0D111790), url(source/arduinoIllustration.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#botBg {
+    background: radial-gradient(#0D111700, #0D111790), url(source/botDiscordIllustration.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
