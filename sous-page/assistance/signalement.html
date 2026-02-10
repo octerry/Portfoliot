@@ -34,14 +34,48 @@ MADE ON EARTH BY HUMANS
             <h2>Selectionner un navigateur</h2>
         </div>
         <div id="browser_list">
-            
+            <div class="browser_section" id="chrome">
+                <img src="../../source/chrome.svg" alt="chrome">
+                <h1>Google Chrome</h1>
+            </div>
+            <div class="browser_section" id="safari">
+                <img src="../../source/safari.svg" alt="chrome">
+                <h1>Safari</h1>
+            </div>
+            <div class="browser_section" id="firefox">
+                <img src="../../source/firefox.svg" alt="chrome">
+                <h1>Mozzila Firefox</h1>
+            </div>
+            <div class="browser_section" id="edge">
+                <img src="../../source/edge.svg" alt="chrome">
+                <h1>Microsoft Edge</h1>
+            </div>
+            <div class="browser_section" id="opera">
+                <img src="../../source/opera.svg" alt="chrome">
+                <h1>Opera / Opera GX</h1>
+            </div>
+            <div class="browser_section" id="brave">
+                <img src="../../source/brave.svg" alt="chrome">
+                <h1>Brave</h1>
+            </div>
+            <div class="browser_section" id="arc">
+                <img src="../../source/arc.svg" alt="chrome">
+                <h1>Arc</h1>
+            </div>
+            <div class="browser_section" id="autre">
+                <img src="../../source/browser.svg" alt="chrome">
+                <h1>Autre (preciser)</h1>
+            </div>
         </div>
         <textarea rows="5" placeholder="Décrire le problème rencontré" name="décrivez votre problème" id="signal_input"></textarea>
-        <label for="file_input" id="pseudo_file_input">
-            <img src="../../source/clip.svg" alt="trombone">
-            <h1 id="file_name">Ajouter un screenshot</h1>
-            <h2>(recommandé)</h2>
-        </label>
+        <div id="big_file_input">
+            <label for="file_input" id="pseudo_file_input">
+                <img src="../../source/clip.svg" alt="trombone">
+                <h1 id="file_name">Ajouter un screenshot</h1>
+                <h2 id="recommand_file">(recommandé)</h2>
+            </label>
+            <img src="../../source/cross.svg" alt="croix" id="cross">
+        </div>
         <input type="file" id="file_input">
         <div id="send_button">
             <h1>Envoyer</h1>
