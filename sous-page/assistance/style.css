@@ -1,3 +1,12 @@
+/* Coucou toi qui regarde dans le code
+
+
+/‾‾‾‾‾\ /‾‾‾‾‾] [‾‾‾‾‾‾‾‾] |‾‾‾‾‾] |‾‾‾‾‾\ |‾‾‾‾‾\ |‾| /‾/
+| |‾| | | |‾‾‾   ‾‾|  |‾‾  | |‾‾‾  |     | |     | | |/ /
+| | | | | |        |  |    |  ___] |     / |     / |  _/
+| |_| | | |___     |  |    | |___  | |\ \  | |\ \  | |
+\_____/ \_____]    |__|    |_____] |_| \_\ |_| \_\ |_|
+MADE ON EARTH BY HUMANS */
 /* IMPORTER LES POLICES */
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Homenaje&family=Hubballi&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
@@ -128,8 +137,14 @@ header h1 {
     font-size: 2vh;
 }
 
-.down_arrow_svg {
+#browser_logo {
+    display: none;
     width: 2vh;
+    margin-right: .5vh;
+}
+
+.down_arrow_svg {
+    width: 1.5vh;
     margin-right: .5vh;
 }
 
@@ -158,10 +173,32 @@ header h1 {
     background-color: #00000060;
 }
 
-.browser_section img
-{
+.browser_section img {
     width: 3vh;
     margin-right: 1vh;
+}
+
+#browser_input {
+    display: none;
+    color: #fff;
+    font-family: "Hind";
+    font-size: 2vh;
+    width: 100%;
+    margin-top: 1vh;
+    padding: 1vh 2vh;
+    background-color: #D9D9D920;
+    border: none;
+    border-radius: 1vh;
+}
+
+#browser_input:focus {
+     outline: none;
+}
+
+#browser_input::placeholder {
+    color: #9A9A9A;
+    font-family: "Hind";
+    font-size: 2vh;
 }
 
 #signal_input {
@@ -169,11 +206,18 @@ header h1 {
     background-color: #D9D9D920;
     width: 100%;
     min-height: 10vh;
+    max-height: 50vh;
     color: #fff;
+    font-family: "Hind";
+    font-size: 2vh;
     border: none;
     padding: 1vh 2vh;
     border-radius: 1vh;
     resize: vertical;
+}
+
+#signal_input:focus {
+    outline: none;
 }
 
 #signal_input::placeholder {
@@ -193,6 +237,12 @@ header h1 {
     justify-content: start;
     padding: 0 1vh;
     border-radius: 1vh;
+}
+
+
+#big_file_input {
+    display: flex;
+    align-items: center;
 }
 
 #pseudo_file_input:hover{
@@ -217,14 +267,12 @@ header h1 {
     font-weight: 100;
 }
 
-#big_file_input {
-    display: flex;
-}
-
 #cross {
     display: none;
-    width: 2vh;
-    margin-left: 1vh;
+    width: 3vh;
+    height: 3vh;
+    border-radius: 1vh;
+    padding: .5vh;
 }
 
 #cross:hover {
@@ -236,6 +284,7 @@ header h1 {
 }
 
 #send_button {
+    user-select: none;
     display: flex;
     align-items: center;
     justify-content: center;

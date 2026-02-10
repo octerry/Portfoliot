@@ -9,10 +9,13 @@
 // MADE ON EARTH BY HUMANS
 
 //DEFINITION DES FONCTIONS
-let all = document.querySelectorAll('*')
+let all = document.querySelectorAll('*');
 
-let nightModeCheck = document.getElementById("darkModeToggle-state")
-let changeThisLogo = document.getElementsByClassName('logoToChange')
+let nightModeCheck = document.getElementById("darkModeToggle-state");
+let changeThisLogo = document.getElementsByClassName('logoToChange');
+
+let plusButton = document.getElementById("plus_button");
+let plusMenu = document.getElementById("index_plus_menu");
 
 //BOUTON MODE SOMBRE
 // D'abord on mets le darkmode si la personne a un darkmode sur son navigateur
@@ -51,3 +54,17 @@ function changeDarkmode() {
         }
     }
 }
+
+plusButton.addEventListener('click', function() {
+    if (plusMenu.style.display == "block") {
+        plusMenu.style.display = "none"
+    } else {
+        plusMenu.style.display = "block"
+    }
+})
+
+window.addEventListener('click', event => {
+    if ( !(plusMenu.contains(event.target) || plusButton.contains(event.target)) ) {
+        plusMenu.style.display = "none";
+    };
+})

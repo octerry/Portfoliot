@@ -17,6 +17,12 @@ MADE ON EARTH BY HUMANS
     <meta property="og:description" content="Page de signalement du site web de Terry Segaunes">
     <title>Signaler un problème du site</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("2kTd1F6qFk63GbPJv");
+        })();
+    </script>
     <script defer src="function.js"></script>
 </head>
 <body>
@@ -31,6 +37,7 @@ MADE ON EARTH BY HUMANS
                 <line x1="0.75" y1="-0.75" x2="8.80249" y2="-0.75" transform="matrix(0.680451 0.732793 -0.680451 0.732793 0 0.777252)" stroke="#9A9A9A" stroke-width="1.5" stroke-linecap="round"></line>
                 <line x1="0.75" y1="-0.75" x2="8.80249" y2="-0.75" transform="matrix(0.680451 -0.732793 0.680451 0.732793 6.5 7.77725)" stroke="#9A9A9A" stroke-width="1.5" stroke-linecap="round"></line>
             </svg>
+            <img src="" id="browser_logo">
             <h2>Selectionner un navigateur</h2>
         </div>
         <div id="browser_list">
@@ -39,44 +46,45 @@ MADE ON EARTH BY HUMANS
                 <h1>Google Chrome</h1>
             </div>
             <div class="browser_section" id="safari">
-                <img src="../../source/safari.svg" alt="chrome">
+                <img src="../../source/safari.svg" alt="safari">
                 <h1>Safari</h1>
             </div>
             <div class="browser_section" id="firefox">
-                <img src="../../source/firefox.svg" alt="chrome">
+                <img src="../../source/firefox.svg" alt="firefox">
                 <h1>Mozzila Firefox</h1>
             </div>
             <div class="browser_section" id="edge">
-                <img src="../../source/edge.svg" alt="chrome">
+                <img src="../../source/edge.svg" alt="edge">
                 <h1>Microsoft Edge</h1>
             </div>
             <div class="browser_section" id="opera">
-                <img src="../../source/opera.svg" alt="chrome">
+                <img src="../../source/opera.svg" alt="opera">
                 <h1>Opera / Opera GX</h1>
             </div>
             <div class="browser_section" id="brave">
-                <img src="../../source/brave.svg" alt="chrome">
+                <img src="../../source/brave.svg" alt="brave">
                 <h1>Brave</h1>
             </div>
             <div class="browser_section" id="arc">
-                <img src="../../source/arc.svg" alt="chrome">
+                <img src="../../source/arc.svg" alt="arc">
                 <h1>Arc</h1>
             </div>
             <div class="browser_section" id="autre">
-                <img src="../../source/browser.svg" alt="chrome">
+                <img src="../../source/autre.svg" alt="autre">
                 <h1>Autre (preciser)</h1>
             </div>
         </div>
-        <textarea rows="5" placeholder="Décrire le problème rencontré" name="décrivez votre problème" id="signal_input"></textarea>
+        <input type="text" name="browser" id="browser_input" placeholder="Ecrivez ici le nom du navigateur" maxlength="20">
+        <textarea placeholder="Décrire le problème rencontré" name="décrivez votre problème" id="signal_input"></textarea>
         <div id="big_file_input">
             <label for="file_input" id="pseudo_file_input">
                 <img src="../../source/clip.svg" alt="trombone">
-                <h1 id="file_name">Ajouter un screenshot</h1>
+                <h1 id="file_name">Ajouter une image/video</h1>
                 <h2 id="recommand_file">(recommandé)</h2>
             </label>
             <img src="../../source/cross.svg" alt="croix" id="cross">
         </div>
-        <input type="file" id="file_input">
+        <input type="file" id="file_input" accept="image/*,video/*">
         <div id="send_button">
             <h1>Envoyer</h1>
         </div>

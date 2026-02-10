@@ -18,11 +18,31 @@ MADE ON EARTH BY HUMANS
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="source/logo.svg">
     <script defer src="code.js"></script>
+    <script defer src="slideMenu.js"></script>
 </head>
 <body class="codeBody">
+    <div id="indexMenu">
+        <div class="indexMenuCross" onclick="indexHideMenu()">
+            <svg viewBox="0 0 24 24" id="indexMenuSvg" fill="#fff">
+                <path d="M18.47 6.47 12.942 12l5.53 5.53-.942.94L12 12.942l-5.53 5.53-.94-.942L11.058 12l-5.53-5.53.942-.94L12 11.058l5.53-5.53.94.942Z"></path>
+            </svg>
+        </div>
+        <hr>
+        <div class="indexMenuSelection">
+            <h1>Portfolio</h1>
+            <h3>terrysegaunes.fr</h3>
+            <div>
+                <a href="index2.html" id="indexAcceuil"><h2>ACCEUIL</h2></a>
+                <a href="code.html" id="indexMenuCode"><h2>CODE</h2></a>
+                <a href="robot.html" id="indexMenuRobot"><h2>ROBOTIQUE</h2></a>
+                <a href="art.html" id="indexMenuArt"><h2>ART</h2></a>
+                <a href="pro.html" id="indexMenuPro"><h2>PROFESSIONNEL</h2></a>
+            </div>
+        </div>
+    </div>
     <header id="code_header">
         <div id="code_header_left_part">
-            <img src="source/codeLogo.svg" alt="logo de la section code" id="code_logo">
+            <img src="source/codeLogo.svg" alt="logo de la section code" id="code_logo" onclick="indexHideMenu()">
             <div class="header_button" id="acceuil_button">
                 <h1>Acceuil</h1>
                 <svg class="down_arrow_svg" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">

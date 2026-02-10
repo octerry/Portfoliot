@@ -398,6 +398,7 @@ body{
 }
 
 .indexHeaderLeftPart a{
+    user-select: none;
     font-size: 3vh;
     color: #496CB9;
     text-decoration: none;
@@ -447,6 +448,35 @@ body{
 .amburgerMenu.dark:hover{
     fill: #fff;
 }
+
+#plus_button:hover {
+    cursor: pointer;
+}
+
+#index_plus_menu {
+    display: none;
+    color: #4f68bb;
+    position: absolute;
+    top: 7vh;
+    left: 51vh;
+    padding: 0 1vh;
+    border: 2px #4f68bb solid;
+    border-radius: 1vh;
+}
+
+#index_plus_menu.dark {
+    color: #fff;
+    border: 1px #fff solid;
+}
+
+#index_plus_menu:hover {
+    background-color: #0059ff30;
+}
+
+#index_plus_menu h1 {
+    font-size: 3vh;
+}
+
 
 .darkModeToggleLabel {
   display: inline-flex;
@@ -770,6 +800,10 @@ body{
     width: 100%;
 }
 
+.codeBody::-webkit-scrollbar {
+    display: none;
+}
+
 .codeBody a {
     text-decoration: none;
 }
@@ -867,6 +901,10 @@ body{
 #code_header_left_part #code_logo {
     width: clamp(3vh,30px,3vw);
     margin-right: clamp(1.5vh,15px,1.5vw);
+}
+
+#code_logo:hover {
+    cursor: pointer;
 }
 
 #code_header_left_part .down_arrow_svg {
@@ -1105,7 +1143,7 @@ body{
 }
 
 #middle_line {
-    width: 1px;
+    min-width: 1px;
     min-height: 100%;
     background-color: #60656C;
 }
@@ -1645,5 +1683,43 @@ body{
 
     #indexMenu hr{
         display: none;
+    }
+
+    #code_left_content {
+        display: none;
+    }
+
+    .header_button {
+        display: none !important;
+    }
+
+    #web_div, #python_div, #autre_div {
+        display: none !important;
+    }
+
+    #page_content {
+        width: 100vw;
+        padding: 2vw;
+    }
+
+    .section_page_content {
+        padding: 5vw;
+    }
+
+    .preambule_button {
+        padding: 2vw;
+        height: 20vw;
+        border: 1vw #fff solid;
+    }
+
+    .preambule_button h1 {
+        font-size: 6vw;
+    }
+    .preambule_button p {
+        display: none;
+    }
+
+    .project_p {
+        padding: 0 2vw;
     }
 }
