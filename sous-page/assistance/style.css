@@ -93,3 +93,110 @@ header h1 {
     font-size: 3vh;
     margin-left: 1vh;
 }
+
+#survey {
+    margin: 2vh;
+    background-color: #ffffff20;
+    padding: 1.5vh 2vh;
+    border-radius: 2vh;
+}
+
+#survey h1 {
+    color: #fff;
+    font-family: "Hind";
+    font-weight: 300;
+    font-size: 2.5vh;
+}
+
+#selection_browser {
+    user-select: none;
+    background-color: #D9D9D920;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1vh;
+}
+
+#selection_browser:hover {
+    cursor: pointer;
+}
+
+#selection_browser h2{
+    color: #9A9A9A;
+    font-family: "Hind";
+    font-weight: 300;
+    font-size: 2vh;
+}
+
+.down_arrow_svg {
+    width: 2vh;
+    margin-right: .5vh;
+}
+
+#signal_input {
+    margin-top: 1vh;
+    background-color: #D9D9D920;
+    width: 100%;
+    min-height: 10vh;
+    color: #fff;
+    border: none;
+    padding: 2vh;
+    border-radius: 1vh;
+    resize: vertical;
+}
+
+#signal_input::placeholder {
+    color: #9A9A9A;
+    font-family: "Hind";
+    font-size: 2vh;
+}
+
+#pseudo_file_input {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0 1vh;
+    border-radius: 1vh;
+}
+
+#pseudo_file_input:hover {
+    background-color: #D9D9D910;
+}
+
+#pseudo_file_input img {
+    width: 2vh;
+}
+
+#pseudo_file_input h1 {
+    color: #73ACED;
+    font-size: 1.5vh;
+    margin: .8vh;
+}
+
+#pseudo_file_input h2 {
+    color: #9A9A9A;
+    font-family: "Hind";
+    font-size: 1.5vh;
+    font-weight: 100;
+}
+
+#file_input {
+    display: none;
+}
+
+#send_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #509A4A;
+    border-radius: 1vh;
+    width: 10vh;
+    transition: 125ms;
+}
+
+#send_button:hover {
+    cursor: pointer;
+    transform: translateY(-.5vh);
+    box-shadow: .5vh .5vh .5vh #00000030;
+    background-color: #61a95d;
+}

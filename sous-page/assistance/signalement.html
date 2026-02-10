@@ -17,6 +17,7 @@ MADE ON EARTH BY HUMANS
     <meta property="og:description" content="Page de signalement du site web de Terry Segaunes">
     <title>Signaler un problème du site</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="function.js"></script>
 </head>
 <body>
     <header>
@@ -25,8 +26,25 @@ MADE ON EARTH BY HUMANS
     </header>
     <div id="survey">
         <h1>Quel navigateur utilisez vous ?</h1>
-        <div>
+        <div id="selection_browser">
+            <svg class="down_arrow_svg" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="0.75" y1="-0.75" x2="8.80249" y2="-0.75" transform="matrix(0.680451 0.732793 -0.680451 0.732793 0 0.777252)" stroke="#9A9A9A" stroke-width="1.5" stroke-linecap="round"></line>
+                <line x1="0.75" y1="-0.75" x2="8.80249" y2="-0.75" transform="matrix(0.680451 -0.732793 0.680451 0.732793 6.5 7.77725)" stroke="#9A9A9A" stroke-width="1.5" stroke-linecap="round"></line>
+            </svg>
+            <h2>Selectionner un navigateur</h2>
+        </div>
+        <div id="browser_list">
             
+        </div>
+        <textarea rows="5" placeholder="Décrire le problème rencontré" name="décrivez votre problème" id="signal_input"></textarea>
+        <label for="file_input" id="pseudo_file_input">
+            <img src="../../source/clip.svg" alt="trombone">
+            <h1 id="file_name">Ajouter un screenshot</h1>
+            <h2>(recommandé)</h2>
+        </label>
+        <input type="file" id="file_input">
+        <div id="send_button">
+            <h1>Envoyer</h1>
         </div>
     </div>
 </body>
